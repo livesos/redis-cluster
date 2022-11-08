@@ -12,6 +12,7 @@ services:
     command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
     ports:
       - '6381:6381'
+      - '16381:16381'
   # redis2配置
   redis2:
     image: daocloud.io/library/redis:6.0.4
@@ -24,6 +25,7 @@ services:
     command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
     ports:
       - '6382:6382'
+      - '16382:16382'
   # redis3配置
   redis3:
     image: daocloud.io/library/redis:6.0.4
@@ -36,6 +38,7 @@ services:
     command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
     ports:
       - '6383:6383'
+      - '16383:16383'
   # redis4配置
   redis4:
     image: daocloud.io/library/redis:6.0.4
@@ -48,6 +51,7 @@ services:
     command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
     ports:
       - '6384:6384'
+      - '16384:16384'
   # redis5配置
   redis5:
     image: daocloud.io/library/redis:6.0.4
@@ -60,6 +64,7 @@ services:
     command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
     ports:
       - '6385:6385'
+      - '16385:16385'
   # redis6配置
   redis6:
     image: daocloud.io/library/redis:6.0.4
@@ -72,6 +77,7 @@ services:
     command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
     ports:
       - '6386:6386'
+      - '16386:16386'
 networks:
   redis-network:
     driver: bridge
