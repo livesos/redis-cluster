@@ -10,6 +10,8 @@ services:
       - /Users/michael/docker-file/redis-cluster/redis-1/data:/data
       - /Users/michael/docker-file/redis-cluster/redis-1/redis.conf:/usr/local/etc/redis/redis.conf
     command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
+    environment:
+      - REDISCLI_AUTH=123456
     ports:
       - '6381:6381'
       - '16381:16381'
@@ -23,6 +25,8 @@ services:
       - /Users/michael/docker-file/redis-cluster/redis-2/data:/data
       - /Users/michael/docker-file/redis-cluster/redis-2/redis.conf:/usr/local/etc/redis/redis.conf
     command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
+    environment:
+      - REDISCLI_AUTH=123456
     ports:
       - '6382:6382'
       - '16382:16382'
@@ -36,6 +40,8 @@ services:
       - /Users/michael/docker-file/redis-cluster/redis-3/data:/data
       - /Users/michael/docker-file/redis-cluster/redis-3/redis.conf:/usr/local/etc/redis/redis.conf
     command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
+    environment:
+      - REDISCLI_AUTH=123456
     ports:
       - '6383:6383'
       - '16383:16383'
@@ -49,6 +55,8 @@ services:
       - /Users/michael/docker-file/redis-cluster/redis-4/data:/data
       - /Users/michael/docker-file/redis-cluster/redis-4/redis.conf:/usr/local/etc/redis/redis.conf
     command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
+    environment:
+      - REDISCLI_AUTH=123456
     ports:
       - '6384:6384'
       - '16384:16384'
@@ -62,6 +70,8 @@ services:
       - /Users/michael/docker-file/redis-cluster/redis-5/data:/data
       - /Users/michael/docker-file/redis-cluster/redis-5/redis.conf:/usr/local/etc/redis/redis.conf
     command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
+    environment:
+      - REDISCLI_AUTH=123456
     ports:
       - '6385:6385'
       - '16385:16385'
@@ -75,6 +85,8 @@ services:
       - /Users/michael/docker-file/redis-cluster/redis-6/data:/data
       - /Users/michael/docker-file/redis-cluster/redis-6/redis.conf:/usr/local/etc/redis/redis.conf
     command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
+    environment:
+      - REDISCLI_AUTH=123456
     ports:
       - '6386:6386'
       - '16386:16386'
