@@ -7,8 +7,8 @@ services:
     restart: always
     network_mode: "bridge"
     volumes:
-      - /Users/michael/docker-file/redis-cluster/redis-1/data:/data
-      - /Users/michael/docker-file/redis-cluster/redis-1/redis.conf:/usr/local/etc/redis/redis.conf
+      - /Users/michael/Desktop/docker/redis-cluster/redis-1/data:/data
+      - /Users/michael/Desktop/docker/redis-cluster/redis-1/redis.conf:/usr/local/etc/redis/redis.conf
     command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
     environment:
       - REDISCLI_AUTH=123456
@@ -22,8 +22,8 @@ services:
     restart: always
     network_mode: "bridge"
     volumes:
-      - /Users/michael/docker-file/redis-cluster/redis-2/data:/data
-      - /Users/michael/docker-file/redis-cluster/redis-2/redis.conf:/usr/local/etc/redis/redis.conf
+      - /Users/michael/Desktop/docker/redis-cluster/redis-2/data:/data
+      - /Users/michael/Desktop/docker/redis-cluster/redis-2/redis.conf:/usr/local/etc/redis/redis.conf
     command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
     environment:
       - REDISCLI_AUTH=123456
@@ -37,8 +37,8 @@ services:
     restart: always
     network_mode: "bridge"
     volumes:
-      - /Users/michael/docker-file/redis-cluster/redis-3/data:/data
-      - /Users/michael/docker-file/redis-cluster/redis-3/redis.conf:/usr/local/etc/redis/redis.conf
+      - /Users/michael/Desktop/docker/redis-cluster/redis-3/data:/data
+      - /Users/michael/Desktop/docker/redis-cluster/redis-3/redis.conf:/usr/local/etc/redis/redis.conf
     command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
     environment:
       - REDISCLI_AUTH=123456
@@ -52,8 +52,8 @@ services:
     restart: always
     network_mode: "bridge"
     volumes:
-      - /Users/michael/docker-file/redis-cluster/redis-4/data:/data
-      - /Users/michael/docker-file/redis-cluster/redis-4/redis.conf:/usr/local/etc/redis/redis.conf
+      - /Users/michael/Desktop/docker/redis-cluster/redis-4/data:/data
+      - /Users/michael/Desktop/docker/redis-cluster/redis-4/redis.conf:/usr/local/etc/redis/redis.conf
     command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
     environment:
       - REDISCLI_AUTH=123456
@@ -67,8 +67,8 @@ services:
     restart: always
     network_mode: "bridge"
     volumes:
-      - /Users/michael/docker-file/redis-cluster/redis-5/data:/data
-      - /Users/michael/docker-file/redis-cluster/redis-5/redis.conf:/usr/local/etc/redis/redis.conf
+      - /Users/michael/Desktop/docker/redis-cluster/redis-5/data:/data
+      - /Users/michael/Desktop/docker/redis-cluster/redis-5/redis.conf:/usr/local/etc/redis/redis.conf
     command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
     environment:
       - REDISCLI_AUTH=123456
@@ -82,8 +82,8 @@ services:
     restart: always
     network_mode: "bridge"
     volumes:
-      - /Users/michael/docker-file/redis-cluster/redis-6/data:/data
-      - /Users/michael/docker-file/redis-cluster/redis-6/redis.conf:/usr/local/etc/redis/redis.conf
+      - /Users/michael/Desktop/docker/redis-cluster/redis-6/data:/data
+      - /Users/michael/Desktop/docker/redis-cluster/redis-6/redis.conf:/usr/local/etc/redis/redis.conf
     command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
     environment:
       - REDISCLI_AUTH=123456
