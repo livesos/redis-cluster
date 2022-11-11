@@ -1,9 +1,12 @@
 # 启动
+```shell
 docker-compose up
+```
 
 # 进入其中一个容器
+```shell
 docker exec -it redis-1 bash
-
+```
 # 开启集群
 ```shell
 redis-cli --cluster create \
